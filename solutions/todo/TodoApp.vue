@@ -32,7 +32,7 @@ const counts = computed(() => {
   return { all: todos.value.size, completed, pending };
 });
 
-function submitTodo() {
+function submitTodo(e: Event) {
   const text = todoDraft.value.trim();
   if (!text) return;
 
