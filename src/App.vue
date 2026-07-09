@@ -1,13 +1,38 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
 
   <nav class="navigation">
-    <RouterLink class="navigation_link" to="/">Go to Home</RouterLink>
-    <RouterLink class="navigation_link" to="/todos">Go to "Todo Mini-App"</RouterLink>
+    <RouterLink
+      class="navigation_link"
+      to="/"
+      >Go to Home</RouterLink
+    >
+
+    <RouterLink
+      class="navigation_link"
+      to="/todos"
+      >Go to "Todo Mini-App"</RouterLink
+    >
+
+    <RouterLink
+      class="navigation_link"
+      to="/accordion"
+      >Go to "Accordion Mini-App"</RouterLink
+    >
+
+    <RouterLink
+      class="navigation_link"
+      to="/tabs"
+      >Go to "Tabs Mini-App"</RouterLink
+    >
+
+    <RouterLink
+      class="navigation_link"
+      to="/modal"
+      >Go to "Modal Mini-App"</RouterLink
+    >
   </nav>
 
   <main>
@@ -17,13 +42,14 @@
 
 <style>
 .navigation {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 10px;
-  }
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+}
 
-a, .router-link-active {
+a,
+.router-link-active {
   text-decoration: none;
   color: #333;
 }
@@ -33,6 +59,4 @@ a, .router-link-active {
   color: #42b983;
   font-weight: bold;
 }
-
 </style>
-
